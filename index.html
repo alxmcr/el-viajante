@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- META - INTELIGENCIA -->
@@ -93,7 +93,8 @@
                             <p>"La belleza de Nueva York es multisensorial: es la arquitectura histórica, desde el
                                 Flatiron Building hasta el One World Trade Center. Es la sensación de la hierba debajo
                                 de tus pies (y el olor a nueces tostadas) en Central Park."</p>
-                            <a class="btn btn-flat" href="#historias" id="stories-paris">Leer Historias 🤩</a>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias" id="stories-paris">Leer Historias
+                                🤩</a>
                         </div>
                     </div>
                 </div>
@@ -103,8 +104,10 @@
                     <div class="card-trip-infos">
                         <div>
                             <h2>Venecia, Italia</h2>
-                            <p>"No hay ningún lugar en la Tierra como Venecia: sus canales, el laberinto de calles adoquinadas sin automóviles y los pasadizos ocultos son perfectos para pasear."</p>
-                            <a class="btn btn-flat" href="#historias" id="stories-qa">Leer Historias 🤩</a>
+                            <p>"No hay ningún lugar en la Tierra como Venecia: sus canales, el laberinto de calles
+                                adoquinadas sin automóviles y los pasadizos ocultos son perfectos para pasear."</p>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias" id="stories-qa">Leer Historias
+                                🤩</a>
                         </div>
                     </div>
                 </div>
@@ -116,14 +119,88 @@
                             <h2>Buenos Aires, Argentina</h2>
                             <p>"Los amantes del diseño deben planificar al menos una visita al Cementerio de Recoleta,
                                 luego explorar los estilos arquitectónicos muy variados en cada esquina."</p>
-                            <a class="btn btn-flat" href="#historias">Leer Historias 🤩</a>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias">Leer Historias 🤩</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-trip">
+                    <img
+                        src="https://images.unsplash.com/photo-1506374322094-6021fc3926f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=806&q=80" />
+                    <div class="card-trip-infos">
+                        <div>
+                            <h2>Sydney, Australia</h2>
+                            <p>"Casi no es justo lo bonita que es Sydney. La ciudad más grande de Australia se beneficia
+                                de una cultura frente al mar, con los lugareños que se suben a los transbordadores para
+                                viajar a casa, o jugar, en las playas de Bondi, Manly y Coogee, y la espectacular Ópera
+                                de Sídney en el puerto."</p>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias">Leer Historias 🤩</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-trip">
+                    <img
+                        src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=686&q=80" />
+                    <div class="card-trip-infos">
+                        <div>
+                            <h2>Roma, Italia</h2>
+                            <p>"Roma cautiva a los viajeros de una manera que pocas ciudades pueden: atribuirlo a una
+                                arquitectura de clase mundial, vicoli de adoquines increíblemente estrechos y museos
+                                llenos de obras maestras artísticas. Llámenos sentimentales, pero aún nos detenemos en
+                                seco al primer vistazo del Panteón cuando nos dirigimos a la Piazza della Rotonda."</p>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias">Leer Historias 🤩</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-trip">
+                    <img
+                        src="https://images.unsplash.com/photo-1516306580123-e6e52b1b7b5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=798&q=80" />
+                    <div class="card-trip-infos">
+                        <div>
+                            <h2>Rio de Janeiro, Brazil</h2>
+                            <p>"Río tiene algunos de los tramos de arena más bellos del mundo, desde Copacabana hasta
+                                Ipanema. Christ the Redeemer vigila toda la costa, donde una ciudad vibrante parece
+                                bailar hasta el mar y suavizarse mientras flota en una tabla de remo de pie."</p>
+                            <a class="btn btn-flat w-100 mt-1 mb-1" href="#historias">Leer Historias 🤩</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
-
+        <br>
+        <section>
+            <p>
+                <a id="btn-more-cities" class="btn btn-primary btn-more-cities w-100" data-toggle="collapse"
+                    href="#more-cities" role="button" aria-expanded="false" aria-controls="more-cities">¿No encuentra su
+                    ciudad? Click aqui!
+                    ✏️</a>
+            </p>
+            <!-- Section: Nueva Ciudad -->
+            <div class="collapse w-100" id="more-cities">
+                <div class="card card-body">
+                    <h2 class="brand-text-color">Adicione su Ciudad</h2>
+                    <form id="form-new-city">
+                        <div class="form-group">
+                            <label for="ciudad-input">Ciudad</label>
+                            <input type="text" class="form-control" id="ciudad-input"
+                                placeholder="Ingrese el nombre de la ciudad">
+                            <small id="ciudad-help" class="form-text text-muted d-none">We'll never share your email with
+                                anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">Correo Electronico</label>
+                            <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp"
+                                placeholder="Ingrese su email">
+                            <small id="email-help" class="form-text text-muted d-none">We'll never share your email with
+                                anyone
+                                else.</small>
+                        </div>
+                        <button type="submit" id="btn-register-city" class="btn btn-flat">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
         <!-- Section: Subscripcion -->
         <br>
         <section id="subscribite"
@@ -136,7 +213,6 @@
             <div class="col-sm-12 col-md-6 bg-white rounded">
                 <div class="typeform-widget" data-url="https://form.typeform.com/to/iNeG9Fbt"
                     style="width: 100%; height: 500px;"></div>
-                <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
                 <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">
                     powered by <a
                         href="https://admin.typeform.com/signup?utm_campaign=iNeG9Fbt&utm_source=typeform.com-01EEVS417BSH58V1Y1QXPKRH54-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN"
@@ -170,6 +246,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!-- typeform -->
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+    <!-- My JS Script -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

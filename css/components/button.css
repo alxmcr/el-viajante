@@ -25,6 +25,12 @@
     color: white;
 }
 
+.btn-more-cities:hover {
+    border: 1px solid #1BCB7F;
+    background: #1BCB7F;
+    color: white;
+}
+
 .btn-gradient {
     color: white;
     padding: 8px 24px;
@@ -39,4 +45,3 @@
     background: linear-gradient(#147EFF, #0F67DA);
     color: white;
 }
-
