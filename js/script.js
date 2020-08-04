@@ -16,10 +16,10 @@ formNewCity.addEventListener("submit", sendRequestCiudad);
 // Event Listeners: Inputs
 ciudadInput.addEventListener("change", (event) => checkCiudad())
 emailInput.addEventListener("change", (event) => checkEmail())
+ciudadInput.addEventListener("blur", (event) => checkForm())
+emailInput.addEventListener("blur", (event) => checkForm())
 
-function sendRequestCiudad(event) {
-    // Cancel the default behavior :)
-    event.preventDefault();
+function checkForm() {
     // Values
     const isCiudadOK = checkCiudad();
     const isEmailOK = checkEmail();
@@ -30,11 +30,18 @@ function sendRequestCiudad(event) {
     if (isCiudadOK && isEmailOK) {
         btnRegisterCity.classList.remove("disable");
         btnRegisterCity.removeAttribute("disabled");
-        alert("Datos registrados!, gracias.");
     } else {
         btnRegisterCity.classList.add("disable");
         btnRegisterCity.setAttribute("disabled", true);
     }
+}
+
+function sendRequestCiudad(event) {
+    // Cancel the default behavior :)
+    event.preventDefault();
+    alert("Datos registrados!, gracias.");
+
+
 }
 
 function checkCiudad() {
