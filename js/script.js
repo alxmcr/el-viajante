@@ -7,25 +7,22 @@ const emailInput = document.getElementById("email-input");
 // HELPS
 const ciudadHelp = document.getElementById("ciudad-help");
 const emailHelp = document.getElementById("email-help");
+const resultHelp = document.getElementById("result-help");
 // BUTTON
 const btnRegisterCity = document.getElementById("btn-register-city");
 console.log("btnRegisterCity", btnRegisterCity);
 
 // Event Listeners: Form
 formNewCity.addEventListener("submit", sendRequestCiudad);
+formNewCity.addEventListener("change", checkForm);
 // Event Listeners: Inputs
 ciudadInput.addEventListener("change", (event) => checkCiudad())
 emailInput.addEventListener("change", (event) => checkEmail())
-ciudadInput.addEventListener("blur", (event) => checkForm())
-emailInput.addEventListener("blur", (event) => checkForm())
 
 function checkForm() {
     // Values
     const isCiudadOK = checkCiudad();
     const isEmailOK = checkEmail();
-
-    console.log("isCiudadOK", isCiudadOK)
-    console.log("isEmailOK", isEmailOK)
 
     if (isCiudadOK && isEmailOK) {
         btnRegisterCity.classList.remove("disable");
@@ -33,15 +30,20 @@ function checkForm() {
     } else {
         btnRegisterCity.classList.add("disable");
         btnRegisterCity.setAttribute("disabled", true);
+        resultHelp.classList.add("invisible");
     }
 }
 
 function sendRequestCiudad(event) {
     // Cancel the default behavior :)
     event.preventDefault();
-    alert("Datos registrados!, gracias.");
-
-
+    // Visible help
+    resultHelp.classList.remove("invisible");
+    // Reset
+    formNewCity.reset();
+    // Disabled button
+    btnRegisterCity.classList.add("disable");
+    btnRegisterCity.setAttribute("disabled", true);
 }
 
 function checkCiudad() {
