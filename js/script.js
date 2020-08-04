@@ -9,6 +9,7 @@ const ciudadHelp = document.getElementById("ciudad-help");
 const emailHelp = document.getElementById("email-help");
 // BUTTON
 const btnRegisterCity = document.getElementById("btn-register-city");
+console.log("btnRegisterCity", btnRegisterCity);
 
 // Event Listeners: Form
 formNewCity.addEventListener("submit", sendRequestCiudad);
@@ -23,6 +24,9 @@ function sendRequestCiudad(event) {
     const isCiudadOK = checkCiudad();
     const isEmailOK = checkEmail();
 
+    console.log("isCiudadOK", isCiudadOK)
+    console.log("isEmailOK", isEmailOK)
+
     if (isCiudadOK && isEmailOK) {
         btnRegisterCity.classList.remove("disable");
         btnRegisterCity.removeAttribute("disabled");
@@ -36,12 +40,12 @@ function sendRequestCiudad(event) {
 function checkCiudad() {
     let isOKCiudad = false;
     const ciudadValue = ciudadInput.value;
-    const isValidCiudad = ciudadValue === "" || ciudadValue === undefined || ciudadValue === null;
-    if (isValidCiudad) {
+    const isInvalidCiudad = ciudadValue === "" || ciudadValue === undefined || ciudadValue === null;
+    if (isInvalidCiudad) {
         ciudadHelp.classList.remove("d-none");
-        isOKCiudad = true;
     } else {
         ciudadHelp.classList.add("d-none");
+        isOKCiudad = true;
     }
     return isOKCiudad;
 }
@@ -49,12 +53,12 @@ function checkCiudad() {
 function checkEmail() {
     let isOKEmail = false;
     const emailValue = emailInput.value;
-    const isValidEmail = emailValue === "" || emailValue === undefined || emailValue === null;
-    if (isValidEmail) {
+    const isInvalidEmail = emailValue === "" || emailValue === undefined || emailValue === null;
+    if (isInvalidEmail) {
         emailHelp.classList.remove("d-none");
-        isOKEmail = true;
     } else {
         emailHelp.classList.add("d-none");
+        isOKEmail = true;
     }
     return isOKEmail;
 }
