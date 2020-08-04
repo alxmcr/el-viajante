@@ -10,7 +10,7 @@ const emailHelp = document.getElementById("email-help");
 const resultHelp = document.getElementById("result-help");
 // BUTTON
 const btnRegisterCity = document.getElementById("btn-register-city");
-console.log("btnRegisterCity", btnRegisterCity);
+const btnMoreCities = document.getElementById("btn-more-cities");
 
 // Event Listeners: Form
 formNewCity.addEventListener("submit", sendRequestCiudad);
@@ -18,6 +18,8 @@ formNewCity.addEventListener("change", checkForm);
 // Event Listeners: Inputs
 ciudadInput.addEventListener("change", (event) => checkCiudad())
 emailInput.addEventListener("change", (event) => checkEmail())
+// Event: Click
+btnMoreCities.addEventListener("click", (event) => $('.collapse').collapse());
 
 function checkForm() {
     // Values
@@ -72,5 +74,3 @@ function checkEmail() {
     return isOKEmail;
 }
 
-// JQuery
-$('.collapse').collapse();
