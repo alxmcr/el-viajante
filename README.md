@@ -1,6 +1,15 @@
 # El Viajante - Landing page
-- Por Alejandro M. Coca
-- Para [Le Wagon Bootcamp Buenos Aires](https://www.lewagon.com/es/buenos-aires)
+
+Esta es una Landing Page para el curso de [Le Wagon Bootcamp Buenos Aires](https://www.lewagon.com/es/buenos-aires)
+
+## Motivacion
+Aprender y practicar HTML, CSS y JS.
+
+### Desktop
+
+
+### Mobile
+
 
 ## Tecnología
 - HTML
