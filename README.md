@@ -5,11 +5,15 @@ Esta es una Landing Page para el curso de [Le Wagon Bootcamp Buenos Aires](https
 ## Motivacion
 Aprender y practicar HTML, CSS y JS.
 
+## Screenshoots
+
 ### Desktop
 
+![El-Viajero-Desktop](https://raw.githubusercontent.com/alxmcr/el-viajero/master/screenshoots/desktop/el-viajero-desktop.png)
 
 ### Mobile
 
+![El-Viajero-Mobile](https://raw.githubusercontent.com/alxmcr/el-viajero/master/screenshoots/mobile/el-viajero-mobile.png)
 
 ## Tecnología
 - HTML
